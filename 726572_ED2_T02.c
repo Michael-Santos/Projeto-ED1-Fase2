@@ -287,3 +287,8 @@ int exibir_registro(int rrn)
 void criar_idev(Indice *idev){
 	printf("Eu sou uma foca, hain hain\n");
 }
+
+void criar_iprimary(Indice *iprimary){
+	printf("Eu sou uma foca2, hain hain\n");
+	printf("Huehueh");
+}
