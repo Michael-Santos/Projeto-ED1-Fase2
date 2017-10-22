@@ -283,3 +283,7 @@ int exibir_registro(int rrn)
 
 	return 1;
 }
+
+void criar_idev(Indice *idev){
+	printf("Eu sou uma foca, hain hain\n");
+}
