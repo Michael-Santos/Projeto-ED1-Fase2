@@ -312,11 +312,7 @@ void criar_iprimary(Indice *iprimary){
 
 /* (Re)faz o índice de jogos  */
 void criar_idev(Indice *idev) {
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> inserir
 }
 
 /*Escreve um nó da árvore no arquivo de índice,
