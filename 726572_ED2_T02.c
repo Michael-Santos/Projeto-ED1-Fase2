@@ -171,6 +171,8 @@ void inserir_registro_indices(Indice *iprimary, Indice *idev, Jogo j);
 /* Exibe o jogo */
 int exibir_registro(int rrn);
 
+/* Recupera um jogo */
+Jogo recuperar_registro(int rrn);
 
 
 int main()
@@ -183,8 +185,8 @@ int main()
 
 	scanf("%d %d%*c", &ordem_ip, &ordem_is);
 
-	tamanho_registro_ip; /* = Deixarei esse cálculo pesado para você aluno... */
-	tamanho_registro_is; /* = E esse também. */
+	tamanho_registro_ip = 3 + (ordem_ip-1)*(10 + 4) + 1 + ordem_ip*3 ; /* = Deixarei esse cálculo pesado para você aluno... */
+	tamanho_registro_is = 3 + (ordem_is-1)*(10+101) + 1 + ordem_is*3; /* = E esse também. */
 
 	/* Índice primário */
 	Indice iprimary ;
@@ -284,6 +286,58 @@ int exibir_registro(int rrn)
 	return 1;
 }
 
-void criar_idev(Indice *idev){
-	printf("Eu sou uma foca, hain hain\n");
+
+ /********************FUNÇÕES DO MENU*********************/
+ void cadastrar(Indice* iprimary, Indice* idev){
+
+ }
+
+ void alterar(Indice iprimary){
+
+ }
+
+ void buscar(Indice iprimary,Indice idev){
+
+ }
+
+ void listar(Indice iprimary,Indice idev){
+
+ }
+
+
+/* (Re)faz o Cria iprimary*/
+void criar_iprimary(Indice *iprimary){
+
+}
+
+/* (Re)faz o índice de jogos  */
+void criar_idev(Indice *idev) {
+	
+}
+
+/*Escreve um nó da árvore no arquivo de índice,
+* O terceiro parametro serve para informar qual indice se trata */
+void write_btree(void *salvar, int rrn, char ip){
+
+}
+
+/*Lê um nó do arquivo de índice e retorna na estrutura*/
+void *read_btree(int rrn, char ip){
+
+}
+
+/* Aloca um nó de árvore para ser utilizado em memória primária, o primeiro parametro serve para informar que árvore se trata
+* É conveniente que essa função também inicialize os campos necessários com valores nulos*/
+void *criar_no(char ip){
+
+}
+
+/*Libera todos os campos dinâmicos do nó, inclusive ele mesmo*/
+void libera_no(void *node, char ip){
+
+}
+
+
+Jogo recuperar_registro(int rrn){
+
 }
